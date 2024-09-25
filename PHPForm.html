@@ -33,7 +33,7 @@
 
         <form id="exForm" action="form-viewer.php" method="GET">
 
-        <fieldset><legend>Stay Duration and Animals</legend>
+        <fieldset><legend>Stay Duration and Animal Choice</legend>
             
             <input type="radio" name="time" id="rd1" value="1hr">
             <label for="rd1">1 hour</label><br>
@@ -68,28 +68,32 @@
             <label for="cb6">Bears</label><br>
         </fieldset>
         <br>
-        <fieldset><legend>Select vs Multiselect</legend>
-            <label for="drink">Drink:</label>
-            <select name="drink" id="drink">
-                <optgroup label="Shake">
-                    <option value="vanilla shake">Vanilla</option>
-                    <option value="choco shake">Chocolate</option>
+        <fieldset><legend>Snack Choice and Trip Dinner</legend>
+            <label for="snack">Snack:</label>
+            <select name="snack" id="snack">
+                <optgroup label="Homemade">
+                    <option value="homemade_tm">Trail Mix</option>
+                    <option value="pbj">PB & J</option>
                 </optgroup>
-                <optgroup label="Soda">
-                    <option value="coke" selected="">Coke</option>
-                    <option value="7up">7up</option>
+                <optgroup label="Store">
+                    <option value="granola" selected="">Granola Bar</option>
+                    <option value="store_tm">Trail Mix</option>
                 </optgroup>
             </select><br><br>
 
-            <label for="extras">Extra:</label>
-            <select name="extras[]" id="extras" size="2" multiple="">
-                <option value="soup">Soup</option>
-                <option value="salad">Salad</option>
-                <option value="chips">Chips</option>
+            <label for="drink">Drink:</label>
+            <select name="drink[]" id="drink" size="2" multiple="">
+                <option value="water">Water</option>
+                <option value="oj">Orange Juice</option>
+                <option value="lemonade">Lemonade</option>
+                <option value="7up">7 Up</option>
+                <option value="coke">Coca Cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="dr_pep">Dr Pepper</option>
             </select><br>
         </fieldset>
         <br>
-        <input type="submit" value="Order Lunch">        
+        <input type="submit" value="Submit Choices">        
         </form>
 
 
