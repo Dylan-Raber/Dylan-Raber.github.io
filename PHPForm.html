@@ -7,31 +7,10 @@
 </head>
 
 <body>
-    <h1>Homework Example</h1>
-
-        <div id="example">
-            <h3>Example PHP Form Viewers:</h3>
-            <br>
-            <label for="fv">
-                <em>These are some examples of PHP responses that show results of a form submitted to a server. To see an example of what your form viewer for your homework should do, you can paste a URL into the 'Form Processor' field, then alter the form and 'Submit' (ie: Order Lunch) to see the results. It's not neccessary to include this portion in your homework -- it is just to give you some examples.</em><p></p>
-                <ul>
-                    <li><b onclick="fv.value='php_handler.php'; handleInput()">php_handler.php</b> (On the same server as this html file; all that's needed is the relative path) </li>
-                    <li><b onclick="fv.value='https://wp.zybooks.com/form-viewer.php', handleInput()">https://wp.zybooks.com/form-viewer.php</b> (A different server; absolute path must be provided)</li>
-                    <li><b onclick="fv.value='php_handler.txt', handleInput()">formexample.txt</b> (The server <em>shows</em> php code as text to get you started on the homework)</li>
-                    <li><b onclick="fv.value='php_handler.php', handleInput()">php_handler.php</b> (The server <em>runs</em> the code from the previous example)</li>
-                </ul>
-                <input id="fv" type="text" value="php_handler.php" placeholder="URL of a PHP form viewer. Try your own!">
-            </label>
-            <h3>Send with: <span id="method">GET</span></h3>
-            <div id="getOrPost">
-                <input type="radio" name="send_method" id="get" value="GET" checked=""><label for="get">GET</label>
-                <input type="radio" name="send_method" id="post" value="POST"><label for="post">POST</label>
-            </div>
-        </div>
 
     <h2>Zoo Trip Planning</h2>
 
-        <form id="exForm" action="form-viewer.php" method="GET">
+        <form id="exForm" action="php_handler.php" method="GET">
 
         <fieldset><legend>Stay Duration and Animal Choice</legend>
             
